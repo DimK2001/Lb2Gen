@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "f4cGzyTH+x9EnuVanrTKvjba8xlxEXJxHn4n4Qdqy3rKn8BukAX3aDZpTKyv4CcyVMIQKUAORfq4vuXClEqdvg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dpixd\\OneDrive\\Рабочий стол\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dpixd\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\dpixd\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\dpixd\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\dpixd\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
