@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace Lb2Gen
 {
@@ -15,9 +16,12 @@ namespace Lb2Gen
             Population population = new Population();
             for (int i = 0; i < populationCount; i++)
             {
-                List<bool> genes = new List<bool>();
-                //TODO: randomize genes
-                population.NewIndovidual(genes);
+                List<bool> exons = new List<bool>();
+                for (int j = 0; j < 16; ++j)
+                {
+                    exons.Add(rnd.NextDouble() > 0.5);
+                }
+                population.NewIndovidual(exons);
             }
             populations.Add(population);
         }

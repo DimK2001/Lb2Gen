@@ -1,0 +1,17 @@
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.csproj.AssemblyReference.cache
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.Form1.resources
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.csproj.GenerateResource.cache
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.AssemblyInfoInputs.cache
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.AssemblyInfo.cs
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.csproj.CoreCompileInputs.cache
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\bin\Debug\net6.0-windows\Lb2Gen.exe
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\bin\Debug\net6.0-windows\Lb2Gen.deps.json
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\bin\Debug\net6.0-windows\Lb2Gen.runtimeconfig.json
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\bin\Debug\net6.0-windows\Lb2Gen.dll
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\bin\Debug\net6.0-windows\Lb2Gen.pdb
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.dll
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\refint\Lb2Gen.dll
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.pdb
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\Lb2Gen.genruntimeconfig.cache
+C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\obj\Debug\net6.0-windows\ref\Lb2Gen.dll

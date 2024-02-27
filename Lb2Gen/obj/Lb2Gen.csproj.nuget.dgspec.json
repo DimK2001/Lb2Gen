@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dpixd\\OneDrive\\Рабочий стол\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj": {}
+    "C:\\Users\\krahmal\\Desktop\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dpixd\\OneDrive\\Рабочий стол\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj": {
+    "C:\\Users\\krahmal\\Desktop\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dpixd\\OneDrive\\Рабочий стол\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj",
+        "projectUniqueName": "C:\\Users\\krahmal\\Desktop\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj",
         "projectName": "Lb2Gen",
-        "projectPath": "C:\\Users\\dpixd\\OneDrive\\Рабочий стол\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj",
-        "packagesPath": "C:\\Users\\dpixd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dpixd\\OneDrive\\Рабочий стол\\С#\\Lb2Gen\\Lb2Gen\\obj\\",
+        "projectPath": "C:\\Users\\krahmal\\Desktop\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj",
+        "packagesPath": "C:\\Users\\krahmal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\krahmal\\Desktop\\С#\\Lb2Gen\\Lb2Gen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dpixd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\krahmal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,9 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -53,24 +50,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -79,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

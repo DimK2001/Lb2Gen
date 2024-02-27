@@ -31,9 +31,9 @@ namespace Lb2Gen
             Random random = new Random();
             Chromosome.Gens[random.Next(Chromosome.Gens.Count())].Mutation();
         }
-        public List<bool> GetExons()
+        /*public List<bool> GetExons()
         {
 
-        }
+        }*/
     }
 }

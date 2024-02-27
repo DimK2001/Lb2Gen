@@ -15,7 +15,7 @@ namespace Lb2Gen
             Individual individual = new Individual(exons);
             individuals.Add(individual);
         }
-        public List<Individual> SelectPair()
+        /*public List<Individual> SelectPair()
         {
             
         }
@@ -26,6 +26,6 @@ namespace Lb2Gen
         public void Clean()
         {
             individuals.Clear();
-        }
+        }*/
     }
 }

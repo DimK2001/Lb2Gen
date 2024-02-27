@@ -14,6 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lb2Gen
-build_property.ProjectDir = C:\Users\dpixd\OneDrive\Рабочий стол\С#\Lb2Gen\Lb2Gen\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\krahmal\Desktop\С#\Lb2Gen\Lb2Gen\

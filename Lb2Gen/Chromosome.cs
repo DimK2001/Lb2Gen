@@ -10,13 +10,9 @@ namespace Lb2Gen
     internal class Chromosome
     {
         public List<Gen> Gens = new List<Gen>();
-        public Chromosome(List<List<bool>> geneExons)
+        public Chromosome(List<Gen>? gens = null)
         {
-            Gens = new List<Gen>();
-            foreach (var gene in geneExons)
-            {
-                Gens.Add(new Gen(gene));
-            }
+            Gens = gens ?? new List<Gen>();
         }
         //mb wrong
         public List<bool> GetExons()
