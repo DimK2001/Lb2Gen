@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lb2Gen
 {
-    internal class Gen
+    public class Gen
     {
         public double Value;
         public List<bool> Exons = new List<bool>();
@@ -35,6 +36,31 @@ namespace Lb2Gen
                 }
             }
             Exons = exons.ToList();
+        }
+        public double GetDouble(double min, double max)
+        {
+            string gray = "";
+            Exons.ForEach(item =>
+            {
+                gray += item ? '1' : '0';
+            });
+            int n = gray.Count();
+            string binary = "";
+            binary += gray[0];
+            for (int i = 1; i < n; i++)
+            {
+                if (gray[i] == '0')
+                    binary += binary[i - 1];
+                else
+                {
+                    if (binary[i - 1] == '0')
+                        binary += '1';
+                    else
+                        binary += '0';
+                }
+            }
+            double dec = Convert.ToInt32(binary, 2);
+            return min + dec * (max - min) / Exons.Count - 1;
         }
         public void Mutation()
         {

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\krahmal\\Desktop\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj",
+      "projectUniqueName": "D:\\C#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj",
       "projectName": "Lb2Gen",
-      "projectPath": "C:\\Users\\krahmal\\Desktop\\С#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj",
+      "projectPath": "D:\\C#\\Lb2Gen\\Lb2Gen\\Lb2Gen.csproj",
       "packagesPath": "C:\\Users\\krahmal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\krahmal\\Desktop\\С#\\Lb2Gen\\Lb2Gen\\obj\\",
+      "outputPath": "D:\\C#\\Lb2Gen\\Lb2Gen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krahmal\\AppData\\Roaming\\NuGet\\NuGet.Config",
