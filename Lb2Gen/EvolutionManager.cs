@@ -26,42 +26,22 @@
             Population currentPopulation = populations[populations.Count - 1];
             List<Individual> winners = new List<Individual>();
             Population newPopulation = new Population();
-            for (int i = 0; i < currentPopulation.individuals.Count / 3; i++)
+            for (int i = 0; i < currentPopulation.individuals.Count; i++)
             {
-                int winner = i * 3;
+                int winner = 0;
                 double winnerVal = double.MaxValue;
-                for (int j = i * 3; j < i * 3 + 3; ++j)
+                for (int j = 0; j < 3; ++j)
                 {
-                    if (currentPopulation.individuals[j].GetFitness() < winnerVal)
+                    int spc = rnd.Next(currentPopulation.individuals.Count);
+                    if (currentPopulation.individuals[spc].GetFitness() < winnerVal)
                     {
-                        winner = j;
-                        winnerVal = currentPopulation.individuals[j].GetFitness();
+                        winner = spc;
+                        winnerVal = currentPopulation.individuals[spc].GetFitness();
                         if (loss > winnerVal)
                         {
                             loss = winnerVal;
-                            bestX = currentPopulation.individuals[j].Chromosome.Gens[0].GetDouble(-5, 5);
-                            bestY = currentPopulation.individuals[j].Chromosome.Gens[1].GetDouble(-5, 5);
-                        }
-                    }
-                }
-                winners.Add(currentPopulation.individuals[winner]);
-            }
-            if (currentPopulation.individuals.Count % 3 > 0)
-            {
-                int winner = currentPopulation.individuals.Count;
-                double winnerVal = double.MaxValue;
-                for (int j = currentPopulation.individuals.Count - 3;
-                    j < currentPopulation.individuals.Count; ++j)
-                {
-                    if (currentPopulation.individuals[j].GetFitness() < winnerVal)
-                    {
-                        winner = j;
-                        winnerVal = currentPopulation.individuals[j].GetFitness();
-                        if (loss > winnerVal)
-                        {
-                            loss = winnerVal;
-                            bestX = currentPopulation.individuals[j].Chromosome.Gens[0].GetDouble(-5, 5);
-                            bestY = currentPopulation.individuals[j].Chromosome.Gens[1].GetDouble(-5, 5);
+                            bestX = currentPopulation.individuals[spc].Chromosome.Gens[0].GetDouble(-5, 5);
+                            bestY = currentPopulation.individuals[spc].Chromosome.Gens[1].GetDouble(-5, 5);
                         }
                     }
                 }
@@ -71,10 +51,6 @@
             {
                 List<Individual> crossed = newPopulation.Crossingover(new List<Individual> 
                 { winners[i * 2], winners[i * 2 + 1] }, 3);
-                newPopulation.NewIndovidual(crossed[0].Chromosome.GetExons());
-                newPopulation.NewIndovidual(crossed[1].Chromosome.GetExons());
-                crossed = newPopulation.Crossingover(new List<Individual>
-                { winners[i], winners[i + 2] }, 3);
                 newPopulation.NewIndovidual(crossed[0].Chromosome.GetExons());
                 newPopulation.NewIndovidual(crossed[1].Chromosome.GetExons());
             }
@@ -90,7 +66,7 @@
                 individual.Mutation();
             }
             populations.Add(newPopulation);
-            Console.WriteLine(loss + " " + bestX + " " + bestY);
+            Console.WriteLine("Loss:" + loss + " X=" + bestX + " Y=" + bestY);
         }
         public void RemovePopulation()
         {

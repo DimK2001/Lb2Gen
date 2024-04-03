@@ -13,8 +13,8 @@ namespace Lb2Gen
             //ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
             EvolutionManager manager = new EvolutionManager();
-            manager.InitPipolation(5000);
-            for (int i = 0; i < 15; i++)
+            manager.InitPipolation(20);
+            for (int i = 0; i < 100; i++)
             {
                 manager.GetNewGeneration();
             }
