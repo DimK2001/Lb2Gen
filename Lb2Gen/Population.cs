@@ -2,16 +2,11 @@
 {
     public class Population
     {
-        List<Individual> individuals = new List<Individual>();
+        public List<Individual> individuals = new List<Individual>();
         public void NewIndovidual (List<bool> exons)
         {
             Individual individual = new Individual(exons);
             individuals.Add(individual);
-        }
-        public List<Individual> SelectPair()
-        {
-            //TODO: Choose properly(randomly mb)
-            return new List<Individual>() { individuals[0], individuals[1] };
         }
         public List<Individual> Crossingover (List<Individual> parents, int pointsAmount)
         {

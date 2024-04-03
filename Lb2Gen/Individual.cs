@@ -30,6 +30,7 @@ namespace Lb2Gen
         Tuple<double, double> xLimits1 = new(-5, 5);
         Tuple<double, double> yLimits1 = new(-5, 5);
         Tuple<double, double> globalExtremes = new(0, 0);
+        double globalMin = 0;
         public void Mutation()
         {
             foreach (var g in Chromosome.Gens)
@@ -42,9 +43,15 @@ namespace Lb2Gen
                 }
             }
         }
-        /*public List<bool> GetExons()
+        public List<bool> GetExons()
         {
-
-        }*/
+            return Chromosome.GetExons();
+        }
+        public double GetFitness()
+        {
+            return Math.Abs(globalMin - Fitness(
+                Chromosome.Gens[0].GetDouble(xLimits1.Item1, xLimits1.Item2), 
+                Chromosome.Gens[1].GetDouble(yLimits1.Item1, yLimits1.Item2)));
+        }
     }
 }

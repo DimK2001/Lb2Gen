@@ -60,16 +60,20 @@ namespace Lb2Gen
                 }
             }
             double dec = Convert.ToInt32(binary, 2);
-            return min + dec * (max - min) / Exons.Count - 1;
+            var ret = min + dec * (max - min) / Math.Pow(2, Exons.Count) - 1;
+            return ret;
         }
         public void Mutation()
         {
             Random random = new Random();
-            bool g1 = Exons[random.Next(Exons.Count())];
-            g1 = !g1;
-            random = new Random();
-            bool g2 = Exons[random.Next(Exons.Count())];
-            g2 = !g2;
+            int r1 = random.Next(Exons.Count());
+            int r2 = random.Next(Exons.Count());
+            if (r1 == r2)
+            {
+                r2 = random.Next(Exons.Count());
+            }
+            Exons[r2] = !Exons[r2];
+            Exons[r1] = !Exons[r1];
         }
     }
 }

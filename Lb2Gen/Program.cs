@@ -12,6 +12,12 @@ namespace Lb2Gen
             // see https://aka.ms/applicationconfiguration.
             //ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
+            EvolutionManager manager = new EvolutionManager();
+            manager.InitPipolation(5000);
+            for (int i = 0; i < 15; i++)
+            {
+                manager.GetNewGeneration();
+            }
         }
     }
 }
