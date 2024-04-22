@@ -36,8 +36,9 @@ namespace Lb2Gen
             foreach (var g in Chromosome.Gens)
             {
                 Random random = new Random();
-                float probability = random.Next(900, 995);
-                if (random.Next(0, 10000) < probability)
+                //float probability = random.Next(9000, 9950); //mid 9475
+                float probability = 9950;
+                if (random.Next(0, 100000) < probability)
                 {
                     g.Mutation();
                 }

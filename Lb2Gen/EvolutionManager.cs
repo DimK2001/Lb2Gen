@@ -18,7 +18,7 @@
             }
             populations.Add(population);
         }
-        public void GetNewGeneration()
+        public double GetNewGeneration()
         {
             double loss = double.MaxValue;
             double bestX = 0;
@@ -66,7 +66,8 @@
                 individual.Mutation();
             }
             populations.Add(newPopulation);
-            Console.WriteLine("Loss:" + loss + " X=" + bestX + " Y=" + bestY);
+            Console.WriteLine(populations.Count - 1 + " Error: " + loss + " X=" + bestX + " Y=" + bestY);
+            return loss;
         }
         public void RemovePopulation()
         {

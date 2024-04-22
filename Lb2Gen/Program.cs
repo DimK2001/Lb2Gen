@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace Lb2Gen
 {
     internal static class Program
@@ -13,11 +15,15 @@ namespace Lb2Gen
             //ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
             EvolutionManager manager = new EvolutionManager();
-            manager.InitPipolation(20);
-            for (int i = 0; i < 100; i++)
+            Stopwatch sw = Stopwatch.StartNew();
+            manager.InitPipolation(5000);
+            double err = 1000;
+            while (err > 0.0005)
             {
-                manager.GetNewGeneration();
+                err = manager.GetNewGeneration();
             }
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
         }
     }
 }
